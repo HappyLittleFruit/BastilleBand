@@ -11,12 +11,13 @@ div{
 
 }
 .navbar{
-    background-color: rgba(0, 0, 0, 0.342);
+    background-color: rgba(0, 0, 0, 0.253);
     height: 40px;
     display: grid;
     grid-template-columns: 1fr auto auto auto auto auto auto;
     align-items: center;
-    opacity: 0.6;
+    position: fixed;
+    width: 100%;
 }
 .navbar>section> a {
     padding: 0px 25px 4px 10px;
@@ -63,6 +64,8 @@ div{
     color: rgb(216, 32, 32);
     text-shadow: 10px 12px 15px black;
     font-family: Bastille;   
+    opacity: 0.7;
+
 }
 footer{
     position: absolute;
@@ -71,7 +74,7 @@ footer{
     text-shadow: 10px 12px 15px black;
     font-family: Bastille;   
 }
-nav> footer > a>img{
+footer > a>img{
     width: 35px;
     height: 35px;
 }
