@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mae{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+div{
+    height: 600px;
+
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.342);
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto auto auto;
+    align-items: center;
+    opacity: 0.6;
+}
+.navbar>section> a {
+    padding: 0px 25px 4px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+}
+#logo{
+    height: 25px;
+    padding: 10px 10px 10px 20px;
+    cursor: pointer;
+}
+.navbar> section> a:hover{
+   border-bottom: 2px solid rgba(179, 173, 173, 0.856);
+}
+ 
+ #home::before {
+        content: " ";
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        top:0;
+        left: 0;
+        background-image: url(img/Bastille.jpg);
+        opacity: 1;   
+        cursor: pointer;  
+}
+
+/*#home:hover::before{
+    filter:opacity(0.4);
+    transition: 0.5s;
+}*/
+@font-face {
+    font-family:Bastille;
+    src: url(font/Open_Sans_Bastille/OpenSans-SemiBold.ttf);
+}
+ #centrologo{
+    position: absolute;
+    top: 325px;
+    right: 60px;
+    left: 350px;
+    font-size: 140px;
+    color: rgb(216, 32, 32);
+    text-shadow: 10px 12px 15px black;
+    font-family: Bastille;   
+}
+footer{
+    position: absolute;
+    top: 87%;
+    left: 45%;
+    text-shadow: 10px 12px 15px black;
+    font-family: Bastille;   
+}
+nav> footer > a>img{
+    width: 35px;
+    height: 35px;
+}
+/* ABOU*/
+.about{
+    background-color: transparent;
+    height: 600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+.filtro{
+    height: 600px;
+}
+.filtro::before{
+  content: '';
+  opacity: 0.12;
+  width: 100%;
+  height: 600px;
+  background-image: url(img/london.jpg);
+  position: absolute;
+  z-index: -1;
+}
+figure{
+    padding: 0px 50px 0px 30px;;
+    display: grid;
+    grid-template-columns: 5fr auto;
+}
+.quadro> img{
+    width: 350px;
+    height: 410px;
+}
+.quadro {
+    width: 350px;
+    height: 410px;
+    background: #ce0808;
+    position: relative;
+    padding: 10px;
+    border: 5px dashed rgb(248, 248, 248);  
+    margin: 20px;
+    box-shadow: 5px 5px 10px;
+    margin-top: 60px;
+
+  }
+  .quadro:after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    background: rgb(0, 81, 255);
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+    z-index: -1;
+    transform: rotateZ(10deg)
+
+
+  }
+  .about> .filtro> h1{
+      font-size: 40px;
+      padding: 10px 0px 5px 30px;
+      background-color: #902121e1;
+      height: auto;
+      color: white;
+  }
+ p{
+    padding: 30px;
+    background-color: #6408ce;
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 280px;
+}
